@@ -4,8 +4,6 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
 go(function(){
-	
-	
 	$mail = new PHPMailer; //PHPMailer对象
 	$mail->CharSet = 'UTF-8'; //设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置，否则乱码
 	$mail->IsSMTP(); // 设定使用SMTP服务

@@ -13,6 +13,8 @@
 
 只需要使用 Composer 引入了本项目，PHPMailer 将会自动支持协程化，并且只能运行在 Swoole 协程中！
 
+QQ群：17916227 [![点击加群](https://pub.idqqimg.com/wpa/images/group.png "点击加群")](https://jq.qq.com/?_wv=1027&k=5wXf4Zq)
+
 ## 使用说明
 
 Composer:`"yurunsoft/phpmailer-swoole":"~1.0"`

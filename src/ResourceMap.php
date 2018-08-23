@@ -128,7 +128,7 @@ abstract class ResourceMap
 		else
 		{
 			// 其它
-			if(false !== ($index = array_search($object, static::$otherMap)))
+			if(false !== ($index = array_search($object, static::$otherMap, true)))
 			{
 				return static::$otherToObjectMap[$index];	
 			}

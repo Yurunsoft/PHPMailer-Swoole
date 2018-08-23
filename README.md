@@ -9,7 +9,9 @@
 
 这是一个适合用于 Swoole 协程环境下的 PHPMailer。
 
-本项目使用非侵入式方案，基于 PHPMailer 6.0 实现 PHPMailer 的 Swoole 协程环境支持，理论上兼容 PHPMailer 6.0 及后续版本。
+基于 PHPMailer 6.0 实现 PHPMailer 的 Swoole 协程环境支持，本项目未修改 PHPMailer 源码，理论上兼容 PHPMailer 6.0 及后续版本。
+
+只需要使用 Composer 引入了本项目，PHPMailer 将会自动支持协程化，并且只能运行在 Swoole 协程中！
 
 ## 使用说明
 

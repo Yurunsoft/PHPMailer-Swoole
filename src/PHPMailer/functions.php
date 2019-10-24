@@ -8,7 +8,7 @@ function fsockopen($host, $port, &$errno, &$errstr, $timeout)
 {
 	$url = parse_url($host);
 	$sockType = SWOOLE_SOCK_TCP;
-	if('ssl' === $url['scheme'])
+	if(isset( $url['scheme']) && 'ssl' === $url['scheme'])
 	{
 		$sockType = $sockType | SWOOLE_SSL;
 	}
@@ -20,7 +20,7 @@ function stream_socket_client($address, &$errno, &$errstr, $timeout, $a, $b)
 {
 	$url = parse_url($address);
 	$sockType = SWOOLE_SOCK_TCP;
-	if('ssl' === $url['scheme'])
+	if(isset( $url['scheme']) && 'ssl' === $url['scheme'])
 	{
 		$sockType = $sockType | SWOOLE_SSL;
 	}
